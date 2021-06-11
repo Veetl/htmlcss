@@ -18,29 +18,39 @@ html, body {
     padding-right: 30px;
 }
 #bodylogo {
-    
-    max-height: 20vh; 
+    height: 20vh; 
+    min-height: 100px;
     width: auto;
-/*    
-min-height: 108px;
-    min-width: 180px;
-    max-width: 180px;
-*/
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+    padding: 10px 10px 10px 10px;
 }
 #pickgame {
     border-radius: 50px;
     padding-right: 30px;
     padding-left: 30px;
 }
+#cart {
+    cursor: pointer;
+}
 header {
     height: 70px;
     background-color:rgb(143, 167, 125);
     display: flex;
     flex-direction: row;
+}
+/*@media screen and (min-width: 600px) {
+    .games{
+        display: block; }
+  }
+  */
+@media screen and (max-width: 643px) {
+    .games{ 
+        display: none; }  
+}
+
+header > input,
+header > img {
+    flex-grow: 1;
 }
 .hflex {
     flex-grow: 1;
@@ -57,16 +67,13 @@ header {
 .hflex5 {
     flex-grow: 5;
 }
-.bluebutton {
+.button.signup {
     background-color:rgb(39, 93, 146);
     color:white;
 }
 .wicon {
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 4px;
-    padding-top: 4px;
+    padding: 4px 10px 4px 10px;
 }
 .button {
     border-radius: 50px;
@@ -93,4 +100,8 @@ header {
     justify-content: center;
 }
 
+.games {
+    max-height: 23vh;
+    padding:5px 5px;
+}
 
