@@ -15,7 +15,13 @@ html, body {
 #burger {
     cursor: pointer;
     flex: end;
-    padding-right: 30px;
+    padding: 50px;
+}
+#hamburger-menu{
+    display:none;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
 }
 #bodylogo {
     height: 20vh; 
@@ -43,13 +49,17 @@ header {
         display: block; }
   }
   */
-@media screen and (max-width: 643px) {
-    .games{ 
-        display: none; }  
+nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    background-color: rgb(182, 212, 161);
+    padding-right: 30px; 
 }
-
 header > input,
-header > img {
+header > img,
+header > form > input {
     flex-grow: 1;
 }
 .hflex {
@@ -59,13 +69,28 @@ header > img {
     flex-grow: 2;
 }
 .hflex3 {
-    flex-grow: 3;
+    flex-grow: 3; 
 }
 .hflex4 {
     flex-grow: 4;
 }
 .hflex5 {
     flex-grow: 5;
+}
+.headerform {
+    flex-grow: 3;
+    display:flex;
+}
+.gamelist {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 659px) {
+    .gamelist {
+        grid-template-columns: auto auto auto;
+         }
 }
 .button.signup {
     background-color:rgb(39, 93, 146);
