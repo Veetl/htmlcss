@@ -56,17 +56,14 @@ header > img,
 header > form > input {
     flex-grow: 1;
 }
+.quarterflex{
+    flex-grow: 0.25;
+}
 .hflex {
     flex-grow: 1;
 }
-.hflex2 {
-    flex-grow: 2;
-}
 .hflex3 {
     flex-grow: 3; 
-}
-.hflex4 {
-    flex-grow: 4;
 }
 .hflex5 {
     flex-grow: 5;
@@ -80,6 +77,9 @@ header > form > input {
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     align-items: center;
+}
+.smallgame{
+    height:300px;
 }
 @media screen and (max-width: 659px) {
     .gamelist {
@@ -130,7 +130,8 @@ header > form > input {
     position: relative; bottom:8px; 
 }
 .width100{
-    width:100%;
+    width: 100%; 
+    margin-left: -10px;
     background-color: rgb(39, 93, 146)
 }
 .padding{
@@ -138,4 +139,26 @@ header > form > input {
 }
 .seachstyle{
     width: 30vw;
+}
+.infobox {
+    width: 80vh;
+    height: 200px;
+    background-color: grey;
+    margin: auto;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 200px 500px 500px;
+    background-color:black;
+    padding: 5px;
+}
+.grid-item{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    right: 10px;
 }
