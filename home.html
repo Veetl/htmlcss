@@ -12,14 +12,44 @@
 
 <body>
    <header>
-       <img src="Images/gamehub.png" alt="GameHub Logo" id="logotop" class="iicon"/>
-       <div class="hflex5"></div>
+        <img src="Images/gamehub.png" alt="GameHub Logo" id="logotop" class="iicon"/>
+        <div class="hflex5"></div>
        
+        
+        <form action="/account.html" method="get" class="button">  <!--should be method="post" -->
+            <div class="iicon wicon withinbox">
+                <img src="Images/profile_icon.svg" class="iicon"/>
+                <input type="submit" value="ACCOUNT" class="fitinbox"/>
+            </div>
+        </form> 
+        
+        <form action="/sell.html" method="get" class="button">  <!--should be method="post" -->
+            <div class="iicon wicon withinbox">
+                <img src="Images/seller_icon.svg" id="sell" class="iicon"/>
+                <input type="submit" value="BECOME SELLER" class="fitinbox"/>
+            </div>
+        </form> 
+
+       
+        <form action="/cart.html" method="get" class="button">  <!--should be method="post" -->
+            <div class="iicon wicon withinbox">
+                <img src="Images/shopping_cart_icon.svg" id="cart" class="iicon"/>
+                <input type="submit" value="CART" class="fitinbox"/>
+            </div>
+        </form> 
+               
+    
+
+            
+                
+
+    
+
       
-       <div class="hflex3"></div>
-       <div class="iicon">
-           <img src="Images/shopping_cart_icon.svg" id="cart" class="iicon"/>
-       </div>
+        <div class="hflex3"></div>
+        <form action="/index.html" method="get" class="button">  <!--should be method="post" -->
+            <input type="submit" value="LOG OUT" class="button"/>
+        </form>
         <label for="hamburger-menu" class="center"> <img src="Images/burger_icon.svg" id="burger" class="iicon bluebutton"/></i></label>
         <input type="checkbox" id="hamburger-menu">
         <nav>

@@ -27,7 +27,6 @@ html, body {
     height: 20vh; 
     min-height: 100px;
     width: auto;
-
     padding: 10px 10px 10px 10px;
 }
 #pickgame {
@@ -44,11 +43,6 @@ header {
     display: flex;
     flex-direction: row;
 }
-/*@media screen and (min-width: 600px) {
-    .games{
-        display: block; }
-  }
-  */
 nav {
     display: none;
     position: absolute;
@@ -124,9 +118,14 @@ header > form > input {
     display: flex;
     justify-content: center;
 }
-
 .games {
     max-height: 23vh;
     padding:5px 5px;
 }
-
+.fitinbox {
+    height: 35px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    position: relative; bottom:8px; 
+}
