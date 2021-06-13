@@ -86,6 +86,31 @@ header > form > input {
         grid-template-columns: auto auto auto;
          }
 }
+@media screen and (max-width: 480px) {
+    .gamelist {
+        grid-template-columns: auto auto ;
+         }
+}
+@media screen and (max-width: 706px) {
+    #sell {
+        display:none;
+         }
+}
+@media screen and (max-width: 620px) {
+    #burger {
+        display:none;
+         }
+}
+@media screen and (max-width: 676px) {
+    #signblue {
+        display:none;
+         }
+}
+@media screen and (max-width: 482px) {
+    #logotop {
+        display:none;
+         }
+}
 .button.signup {
     background-color:rgb(39, 93, 146);
     color:white;
