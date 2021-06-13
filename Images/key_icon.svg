@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22">
-  <path id="ic_settings_power_24px" d="M7,24H9V22H7Zm4,0h2V22H11ZM13,2H11V12h2Zm3.56,2.44L15.11,5.89a5.987,5.987,0,1,1-6.23-.01L7.44,4.44a8,8,0,1,0,9.12,0ZM15,24h2V22H15Z" transform="translate(-4 -2)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="47.272" height="25.785" viewBox="0 0 47.272 25.785">
+  <path id="ic_vpn_key_24px" d="M26.033,14.595a12.892,12.892,0,1,0,0,8.595H35.38v8.595h8.595V23.19h4.3V14.595ZM13.892,23.19a4.3,4.3,0,1,1,4.3-4.3A4.31,4.31,0,0,1,13.892,23.19Z" transform="translate(-1 -6)"/>
 </svg>
