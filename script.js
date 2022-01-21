@@ -27,7 +27,7 @@ console.log(info[i].name)
             if (i === 8) {
                 break;
             }
-            resultsContainer.innerHTML += `<div class="result">${info[i].name}</div>`;
+            resultsContainer.innerHTML += `<div class="gamelist">${info[i].name}</div>`;
         }
 
         for(let i = 0; i < info.length; i++) {
@@ -35,7 +35,7 @@ console.log(info[i].name)
             if (i === 8) {
                 break;
            }
-           resultsContainer.innerHTML += `<div class="result">${info[i].rating}</div>`;
+           resultsContainer.innerHTML += `<div class="gamelist">${info[i].rating}</div>`;
        }
 
        for(let i = 0; i < info.length; i++) { 
@@ -43,7 +43,7 @@ console.log(info[i].name)
            if (i === 8) {
                break;
            }
-           resultsContainer.innerHTML += `<div class="result">${info[i].tags}</div>`;
+           resultsContainer.innerHTML += `<div class="gamelist">${info[i].tags}</div>`;
        } 
     } catch (error) {
     resultsContainer.innerHTML = displayError("An error occurred when calling the API")
