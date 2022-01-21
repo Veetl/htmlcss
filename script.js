@@ -1,4 +1,3 @@
-console.log("hei")
 const url = "https://localhost/flower-power/wp-json/wc/v3/products";
 const resultsContainer = document.querySelector(".gamelist")
 let username = 'ck_088360557fdab3e8e37c569ed4a1568f630aa162';
