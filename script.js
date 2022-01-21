@@ -24,7 +24,7 @@ async function getInfo() {
     
         for(let i = 0; i < info.length; i++) {
 console.log(info[i].name)
-            if (i === 8) {
+            if (i === 5) {
                 break;
             }
             resultsContainer.innerHTML += `<div class="gamelist">${info[i].name}</div>`;
@@ -32,7 +32,7 @@ console.log(info[i].name)
 
         for(let i = 0; i < info.length; i++) {
 
-            if (i === 8) {
+            if (i === 5) {
                 break;
            }
            resultsContainer.innerHTML += `<div class="gamelist">${info[i].rating}</div>`;
@@ -40,7 +40,7 @@ console.log(info[i].name)
 
        for(let i = 0; i < info.length; i++) { 
 
-           if (i === 8) {
+           if (i === 5) {
                break;
            }
            resultsContainer.innerHTML += `<div class="gamelist">${info[i].tags}</div>`;
