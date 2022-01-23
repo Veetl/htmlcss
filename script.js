@@ -1,7 +1,8 @@
-const url = "https://localhost/flower-power/wp-json/wc/v3/products";
+const url = "https://skadbergworks.com:9001/wp-json/wc/v3/products";
 const resultsContainer = document.querySelector(".gamelist")
-let username = 'ck_088360557fdab3e8e37c569ed4a1568f630aa162';
-let password = 'cs_cd00a52a79bb4ea96bae0cced5139ef6c6b9b1ec';
+const resultsContainer2 = document.querySelector(".featured")
+let username = 'ck_1d95b6fd427f69c4b10ad77decaaacdfc1141cfb';
+let password = 'cs_985e8abe6a6192424a607d3f26479b190e4d1a7a';
 
 let headers = new Headers();
 headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
@@ -16,41 +17,29 @@ async function getInfo() {
     const object = await response.json();
 
     const info = object;
-
-    //resultsContainer.innerHTML = "";
+    info.sort((a,b) => a.name > b.name);
 
     try {
     
         for(let i = 0; i < info.length; i++) {
-console.log(info[i].name)
-            if (i === 5) {
+            if (i === 10) {
                 break;
             }
-            resultsContainer.innerHTML += `<div class="gamelist">${info[i].name}</div>`;
+            resultsContainer.innerHTML += `<a href="product.html?id=${info[i].id}"><img alt="${info[i].images[0].alt}" class="games withinbox" src="${info[i].images[0].src}"></a>`;
         }
-
-        for(let i = 0; i < info.length; i++) {
-
-            if (i === 5) {
-                break;
-           }
-           resultsContainer.innerHTML += `<div class="gamelist">${info[i].rating}</div>`;
-       }
-
-       for(let i = 0; i < info.length; i++) { 
-
-           if (i === 5) {
-               break;
-           }
-           resultsContainer.innerHTML += `<div class="gamelist">${info[i].tags}</div>`;
-       } 
     } catch (error) {
     resultsContainer.innerHTML = displayError("An error occurred when calling the API")
 }
-// I tried to use (toString) but could not make the array turn into numbers
-    
-  
 
-}
+    try {
+    
+        for(let i = 0; i < info.length; i++) {
+            if (info[i].featured === true) {
+                resultsContainer2.innerHTML += `<a href="product.html?id=${info[i].id}"><img alt="${info[i].images[0].alt}" class="games withinbox" src="${info[i].images[0].src}"></a>`;
+            }   
+        }
+    } catch (error) {
+    resultsContainer2.innerHTML = displayError("An error occurred when calling the API")
+}};
 
 getInfo();

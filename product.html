@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="-username-|Gamehub, buy/sell games!">
+    <meta name="description" content="-username-|Gamehub, your cart">
     <meta name="keywords" content="Videogames, Playbox, buy games, sell games">
     <meta name="author" content="Vetle Skadberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>"Username" | GameHub</title>
+    <title>Shopping Cart | Gamehub</title>
     
     <link rel="stylesheet" href="styles.css">
     
@@ -16,9 +16,9 @@
 
 <body>
    <header>
-    <img src="Images/gamehub.png" alt="GameHub Logo" id="logotop" class="iicon"/>
+        <img src="Images/gamehub.png" alt="GameHub Logo" id="logotop" class="iicon"/>
         <div class="hflex3"></div>
-
+       
         <form action="/account.html" method="get" class="button" id="user">  <!--should be method="post" -->
             <div class="iicon wicon withinbox">
                 <img src="Images/profile_icon.svg" class="iicon"/>
@@ -27,7 +27,7 @@
         </form> 
         
         <div class="quarterflex"></div>
-
+        
         <form action="/sell.html" method="get" class="button" id="sell">  <!--should be method="post" -->
             <div class="iicon wicon withinbox">
                 <img src="Images/seller_icon.svg" class="iicon"/>
@@ -43,7 +43,7 @@
                 <input type="submit" value="CART" class="fitinbox"/>
             </div>
         </form> 
-            
+           
         <div class="quarterflex"></div>
 
         <div class="hflex3"></div>
@@ -61,35 +61,38 @@
         </nav>
    </header>
 
-   <div class="width100 padding">
-    <div class="center">
-        <input type="text" placeholder="Search.." class="seachstyle">
-        <button type="submit"><img src="Images/search_icon.svg" class="iicon"/></button>
+    <div class="width100 padding">
+        <div class="center">
+            <input type="text" placeholder="Search.." class="seachstyle">
+            <button type="submit"><img src="Images/search_icon.svg" class="iicon"/></button>
+        </div>
     </div>
-</div>
-   
-<div class="center">
-    <img src="Images/gamehub.png" alt="GameHub Logo" id="bodylogo">
-</div>
-<br>
-<div class="center">
-    <p>Welcome to the new and user friendly site for trading games! </p>
-</div>
-<br>
-
-<div class="center">
-    <p id="pickgame" class="withinbox bluebutton"> Featured Games </p>
-</div>
-<br>
-<div class="featured"></div>
 
 
-<div class="center">
-    <p id="pickgame" class="withinbox bluebutton"> Pick your game </p>
-</div>
-<br>
+    <div class="center">
+        <img src="Images/gamehub.png" alt="GameHub Logo" id="bodylogo">
+    </div>
 
-<div class="gamelist"></div> 
+    <div class="center">
+        <div class="grid-container3">
+        
+         
+        
+        <div class="grid-item"></div>
+
+            
+            <form action="/paid.html" method="get">  
+                <input type="submit" value="ORDER NOW" class="button"/>
+            </form> 
+          
+    
+        <div class="grid-item">
+            <div class="gameinfo"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  
    
        
 
@@ -98,4 +101,5 @@
 <footer></footer>
 
 </html>
-<script src="script.js"></script>
+
+<script src="script2.js"></script>
