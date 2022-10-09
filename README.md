@@ -16,7 +16,9 @@ This is where you list how to get the project started. It typically just include
 
 1. Clone the repo:
 
-```[bash](https://github.com/Veetl/htmlcss.git)```
+```bash 
+https://github.com/Veetl/htmlcss.git
+```
 
 2. Install the dependencies:
 
